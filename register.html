@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9cfb58acdb.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="content">
+        <form method="POST" action="register.php">
+<div class="field">
+  <label class="label">Name</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-success" type="text" placeholder="Name" name="name" autocomplete="off" required>
+    <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
+  </div>
+</div>
+
+<div class="field">
+  <label class="label">Username</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-success" type="text" placeholder="Username" name="uname" autocomplete="off" required>
+    <span class="icon is-small is-left">
+      <i class="fas fa-user"></i>
+    </span>
+  </div>
+</div>
+<div class="field">
+  <label class="label">Date Of Birth</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-success" type="date" name="dob" autocomplete="off" required>
+    <span class="icon is-small is-left">
+      <i class="fas fa-calendar"></i>
+    </span>
+  </div>
+</div>
+
+
+<div class="field">
+  <label class="label">Email</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-success" type="email" placeholder="Email" name="email" autocomplete="off" required>
+    <span class="icon is-small is-left">
+      <i class="fas fa-envelope"></i>
+    </span>
+  </div>
+</div>
+<div class="field">
+  <label class="label">Password</label>
+  <div class="control has-icons-left has-icons-right">
+    <input class="input is-success" type="password" placeholder="password" name="password" autocomplete="off" required>
+    <span class="icon is-small is-left">
+      <i class="fas fa-lock"></i>
+    </span>
+  </div>
+</div>
+
+<div class="field">
+  <div class="control">
+    <label class="checkbox">
+      <input type="checkbox">
+      I agree to the <a href="#">terms and conditions</a>
+    </label>
+  </div>
+</div>
+<div class="field">
+  <div class="control">
+    <label class="checkbox">
+     Already have an account? <a href="login.php">Sign-in</a>
+    </label>
+  </div>
+</div>
+
+
+<div class="field is-grouped">
+  <div class="control">
+    <button class="button is-link" value="submit" type="submit">Submit</button>
+  </div>
+  <div class="control">
+    <button class="button is-link is-light">Cancel</button>
+  </div>
+</div>
+</form>
+</div>
+</body>
+</html>

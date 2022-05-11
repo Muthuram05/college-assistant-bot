@@ -1,0 +1,21 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+
+}
+.logo{
+    width: 30%;
+    height: 30%;
+}
+.copyright{
+    text-align: center;
+}
+.logo-content{
+    width: 100%;
+    display: flex;
+}
+.logo-content #right{
+    float: right;
+
+}
