@@ -11,83 +11,149 @@
     <link rel="stylesheet" href="register.css">
 </head>
 <body>
-    <div class="content">
+  <style>
+    .fiele  i.fas.fa-check,i.fas.fa-exclamation-triangle{
+      position: absolute;
+      visibility: hidden;
+    }
+    .help{
+      visibility: hidden;
+    }
+    .field.success input{
+      border-color: #2ecc71;
+    }
+    .field.error input{
+      border-color: red;
+    }
+    .field.success i.fas.fa-check{
+      visibility: visible;
+      color: #2ecc71;
+    }
+    .field.error i.fas.fa-exclamation-triangle{
+      visibility: visible;
+      color: red;
+    }
+  </style>
+<div class="content">
         <form method="POST" action="register.php">
-<div class="field">
-  <label class="label">Name</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="text" placeholder="Name" name="name" autocomplete="off" required>
-    <span class="icon is-small is-left">
-      <i class="fas fa-user"></i>
-    </span>
-  </div>
-</div>
+        <div class="field">
+            <label class="label">Name</label>
+            <div class="control has-icons-left has-icons-right">
+              <input class="input" type="text" placeholder="Name" name="name">
+              <span class="icon is-small is-left">
+                <i class="fas fa-user"></i>
+              </span>
+              <span class="icon is-small is-right">
+                <i class="fas fa-exclamation-triangle "></i>
+                <i class="fas fa-check"></i>
+              </span>
+            </div>
+            <p class="help is-danger">This name is invalid</p>
+        </div>
+                <div class="field">
+          <label class="label">UserName</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input " type="text" placeholder="UserName" id="username" name="uname">
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-exclamation-triangle validation"></i>
+              <i class="fas fa-check validation"></i>
+            </span>
+          </div>
+          <p class="help is-danger">This Username is invalid</p>
+        </div>
+        <div class="field">
+          <label class="label">Date Of Birth</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input " type="date" placeholder="Date Of Birth" id="dob" name="dob">
+            <span class="icon is-small is-left">
+              <i class="fas fa-calendar-check"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-exclamation-triangle validation"></i>
+              <i class="fas fa-check validation"></i>
+            </span>
+          </div>
+          <p class="help is-danger">This Date is invalid</p>
+        </div>
+        <div class="field">
+          <label class="label">Email</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input" type="email" placeholder="Email" id="email" name="email">
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-exclamation-triangle validation"></i>
+              <i class="fas fa-check validation"></i>
+            </span>
+          </div>
+          <p class="help is-danger">This email is invalid</p>
+        </div>
+        <div class="field">
+          <label class="label">Phone Number</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input " type="password" placeholder="Password" id="password" name="phone">
+            <span class="icon is-small is-left">
+              <i class="fas fa-phone"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-exclamation-triangle validation"></i>
+              <i class="fas fa-check validation" ></i>
+            </span>
+          </div>
+          <p class="help is-danger">This Password is invalid</p>
+        </div>
+        <div class="field">
+          <label class="label">Password</label>
+          <div class="control has-icons-left has-icons-right">
+            <input class="input " type="password" placeholder="Password" id="password" name="password">
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+            <span class="icon is-small is-right">
+              <i class="fas fa-exclamation-triangle validation"></i>
+              <i class="fas fa-check validation" ></i>
+            </span>
+          </div>
+          <p class="help is-danger">This Password is invalid</p>
+        </div>
 
-<div class="field">
-  <label class="label">Username</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="text" placeholder="Username" name="uname" autocomplete="off" required>
-    <span class="icon is-small is-left">
-      <i class="fas fa-user"></i>
-    </span>
-  </div>
-</div>
-<div class="field">
-  <label class="label">Date Of Birth</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="date" name="dob" autocomplete="off" required>
-    <span class="icon is-small is-left">
-      <i class="fas fa-calendar"></i>
-    </span>
-  </div>
-</div>
+
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+              <input type="checkbox">
+              I agree to the <a href="#">terms and conditions</a>
+            </label>
+          </div>
+        </div>
+        <div class="field">
+          <div class="control">
+            <label class="checkbox">
+            Already have an account? <a href="login.php">Sign-in</a>
+            </label>
+          </div>
+        </div>
 
 
-<div class="field">
-  <label class="label">Email</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="email" placeholder="Email" name="email" autocomplete="off" required>
-    <span class="icon is-small is-left">
-      <i class="fas fa-envelope"></i>
-    </span>
-  </div>
-</div>
-<div class="field">
-  <label class="label">Password</label>
-  <div class="control has-icons-left has-icons-right">
-    <input class="input is-success" type="password" placeholder="password" name="password" autocomplete="off" required>
-    <span class="icon is-small is-left">
-      <i class="fas fa-lock"></i>
-    </span>
-  </div>
-</div>
+        <div class="field is-grouped">
+          <div class="control">
+            <button class="button is-link" value="submit" type="submit">Submit</button>
+          </div>
 
-<div class="field">
-  <div class="control">
-    <label class="checkbox">
-      <input type="checkbox">
-      I agree to the <a href="#">terms and conditions</a>
-    </label>
-  </div>
+        </div>
+        </form>
+        <div class="field is-grouped">
+        <div class="control">
+          <button class="button is-link is-light" onclick="location.href='index.html'">Cancel</button>
+        </div>
+        </div>
 </div>
-<div class="field">
-  <div class="control">
-    <label class="checkbox">
-     Already have an account? <a href="login.php">Sign-in</a>
-    </label>
-  </div>
-</div>
+<script>
 
-
-<div class="field is-grouped">
-  <div class="control">
-    <button class="button is-link" value="submit" type="submit">Submit</button>
-  </div>
-  <div class="control">
-    <button class="button is-link is-light">Cancel</button>
-  </div>
-</div>
-</form>
-</div>
+</script>
 </body>
 </html>
