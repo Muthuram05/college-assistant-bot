@@ -3,17 +3,21 @@
   padding: 0;
   box-sizing: border-box;
 }body{
-  position: absolute;
-  height: 200px;
-  background-color: red;
-}
-div{
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 100%;
+  height: 200vh;
 }
-div img{
-  right: 0;
-  width: 20px;
-  height: 20px;
+.popup{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+}
+.popup img{
+  width: 100%;
+  height: 100%;
 }
